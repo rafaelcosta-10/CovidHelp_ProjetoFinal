@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CovidHelp_ProjetoFinal</string>
+    <string name="quer_ajudar_quem_mais_precisa">DO YOU WANT TO HELP WHO NEED\'S MOORE</string>
+    <string name="registo">SIGN UP</string>
+    <string name="registo_login">SIGN IN/SIGN UP</string>
+    <string name="entrar">LOG IN</string>
+    <string name="precisa_de_ajuda_mas_est_em_casa">NEED HELP BUT SUTCK HOME?</string>
+    <string name="registo_entrar">SIGN IN/SIGN UP</string>
+    <string name="aplica_o_apenas_com_uso_recreativo">APP ONLY FOR RECREATIVE USE</string>
+</resources>

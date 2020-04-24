@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">CovidHelp_ProjetoFinal</string>
-    <string name="covidhelp">COVIDHELP</string>
-    <string name="precisa_de_ajuda_mas_est_em_casa">PRECISA DE AJUDA MAS ESTÁ EM CASA?</string>
+    <string name="covidhelp" translatable="false">COVIDHELP</string>
     <string name="quer_ajudar_quem_mais_precisa">QUER AJUDAR QUEM MAIS PRECISA?</string>
-    <string name="registo_login">REGISTO/LOGIN</string>
     <string name="registo">REGISTO</string>
     <string name="entrar">ENTRAR</string>
     <string name="aplica_o_apenas_com_uso_recreativo">APLICAÇÃO APENAS COM USO RECREATIVO</string>
+    <string name="rafael_costa" translatable="false">*RAFAEL COSTA</string>
+    <string name="precisa_de_ajuda_mas_est_em_casa">PRECISA DE AJUDA MAS ESTÁ EM CASA?</string>
+    <string name="registo_entrar">REGISTO/ENTRAR</string>
 </resources>
