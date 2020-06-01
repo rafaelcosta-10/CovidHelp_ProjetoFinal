@@ -7,6 +7,18 @@
     tools:context=".activity_registo">
 
     <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/aplica_o_apenas_com_uso_recreativo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registo" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,8 +81,144 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
-        android:hint="E-mail"
+        android:hint="@string/e_mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_registoNome" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_idade"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:hint="@string/insira_idade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_registoEmail" />
+
+    <RadioButton
+        android:id="@+id/radiobtn_f"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/f"
+        app:layout_constraintStart_toEndOf="@+id/txt_sexo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_registoEmail" />
+
+    <RadioButton
+        android:id="@+id/radiobtn_m"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radiobtn_f"
+        app:layout_constraintTop_toBottomOf="@+id/txt_registoEmail" />
+
+    <TextView
+        android:id="@+id/txt_sexo"
+        android:layout_width="94dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/genero"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_idade"
+        app:layout_constraintTop_toBottomOf="@+id/txt_registoEmail" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_profissao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:hint="@string/profiss_o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiobtn_m" />
+
+    <RadioButton
+        android:id="@+id/radiobtn_voluntario"
+        android:layout_width="103dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/voluntario"
+        app:layout_constraintEnd_toStartOf="@+id/radiobtn_infetado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profissao" />
+
+    <RadioButton
+        android:id="@+id/radiobtn_infetado"
+        android:layout_width="103dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/infetado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radiobtn_voluntario"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profissao" />
+
+    <Button
+        android:id="@+id/btn_registo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="66dp"
+        android:text="@string/registar"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancelar"
+        app:layout_constraintTop_toBottomOf="@+id/radiobtn_infetado" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginBottom="66dp"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/btn_registo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiobtn_voluntario" />
 </androidx.constraintlayout.widget.ConstraintLayout>

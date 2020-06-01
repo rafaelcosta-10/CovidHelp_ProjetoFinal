@@ -9,4 +9,14 @@
     <string name="precisa_de_ajuda_mas_est_em_casa">PRECISA DE AJUDA MAS ESTÁ EM CASA?</string>
     <string name="registo_entrar">REGISTO/ENTRAR</string>
     <string name="nome_completo">Nome Completo</string>
+    <string name="e_mail">E-mail</string>
+    <string name="insira_idade">Insira Idade</string>
+    <string name="f">F</string>
+    <string name="m">M</string>
+    <string name="genero">Genero:</string>
+    <string name="profiss_o">Profissão</string>
+    <string name="voluntario">Voluntario</string>
+    <string name="infetado">Infetado</string>
+    <string name="registar">REGISTAR</string>
+    <string name="cancelar">CANCELAR</string>
 </resources>
