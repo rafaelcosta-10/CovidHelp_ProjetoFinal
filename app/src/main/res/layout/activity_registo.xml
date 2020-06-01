@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="62dp"
         android:layout_marginRight="62dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/aplica_o_apenas_com_uso_recreativo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,23 +176,32 @@
         android:layout_height="32dp"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="33dp"
         android:text="@string/voluntario"
         app:layout_constraintEnd_toStartOf="@+id/radiobtn_infetado"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_profissao" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <RadioButton
         android:id="@+id/radiobtn_infetado"
         android:layout_width="103dp"
         android:layout_height="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="33dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
         android:text="@string/infetado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radiobtn_voluntario"
-        app:layout_constraintTop_toBottomOf="@+id/txt_profissao" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_password" />
 
     <Button
         android:id="@+id/btn_registo"
@@ -221,4 +230,18 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_registo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radiobtn_voluntario" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profissao" />
 </androidx.constraintlayout.widget.ConstraintLayout>
